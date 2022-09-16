@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+  }
+  body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    height: 10vh;
+    background-color: #373b69;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+  }
+  .numBtn{
+    position: absolute;
+    right: 35%;
+    transform: translateX(100%);
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .searchField{
+    width: 250px;
+    height: 60%;
+    margin-right: 50px;
+    background-color: #373b69;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .searchField:focus{
+    background-color: #22254b;
+  }
+  .movie{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #373b69;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+
+  }
+  .card{
+    border: none;
+  }
+  .img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .img-caption h3{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .img-caption{
+    height: 100%;
+  }
+  .img-row{
+    color: #fff;
+  }
+  /* .rating{
+    background-color: #22254b;
+    color: orange;
+    padding: 10px;
+  } */
+  .overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    object-fit: contain;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+    height: 100%;
+  }
+  .movie:hover .overview{
+    transform: translateY(0%);
+  }
+  .green{
+    color: green;
+  }
+  .orange{
+    color: orange;
+  }
+  .red{
+    color: red;
+  }
+  .bk-dark{
+    background-color: #22254b;
+    padding: 10px;
+    font-weight: bold;
+  }
